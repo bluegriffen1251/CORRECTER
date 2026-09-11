@@ -1,0 +1,78 @@
+/* Add these styles to your existing popup.css */
+
+.engine-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Modern Segmented Control Switcher */
+.segmented-control {
+  display: flex;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 3px;
+  gap: 3px;
+}
+
+.segment-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 0;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.segment-btn:hover {
+  color: #f8fafc;
+}
+
+.segment-btn.active {
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(12, 74, 110, 0.25);
+}
+
+/* Card and header styling */
+.card {
+  width: 360px;
+  padding: 16px;
+  background: linear-gradient(180deg, #0f172a, #0b1220);
+  color: #e6eef8;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.header { display:flex; justify-content:space-between; align-items:center; gap:12px }
+.brand { display:flex; gap:10px; align-items:center }
+.logo-icon { width:42px; height:42px; border-radius:10px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#7c3aed,#06b6d4); font-size:18px }
+.title-group h1 { margin:0; font-size:16px }
+.title-group .version { font-size:11px; color:#94a3b8 }
+.status-badge { display:flex; gap:8px; align-items:center }
+.status-badge .dot { width:10px; height:10px; background:#34d399; border-radius:50% }
+.status-badge.disabled .dot { background:#f97316 }
+.divider { border:none; height:1px; background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03)); margin:12px 0 }
+
+.setting-row { display:flex; align-items:center; justify-content:space-between; gap:12px }
+.setting-info .label { display:block; font-weight:700 }
+.setting-info .sublabel { display:block; font-size:12px; color:#94a3b8 }
+
+input[type="password"] { background: rgba(255,255,255,0.03); color: #e6eef8; border: 1px solid rgba(255,255,255,0.04); padding:8px }
+button { font-family: inherit }
+
+.btn-save { background:#10b981; color:white; border:none; padding:8px 10px; border-radius:8px; cursor:pointer }
+.btn-save:hover { filter:brightness(0.95) }
+.btn-clear { background:transparent; color:#f87171; border:1px solid rgba(248,113,113,0.14); padding:8px 10px; border-radius:8px; cursor:pointer }
+.btn-clear:hover { background: rgba(248,113,113,0.06) }
+
+.api-help { display:block; margin-top:8px; font-size:12px; color:#93c5fd; text-decoration:none }
+.api-help:hover { text-decoration:underline }
+
+.footer { margin-top:8px; font-size:12px; color:#9ca3af }

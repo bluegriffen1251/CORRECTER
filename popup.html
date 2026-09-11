@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Correcter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="card">
+    <!-- Header with Branding -->
+    <div class="header">
+      <div class="brand">
+        <div class="logo-icon">✨</div>
+        <div class="title-group">
+          <h1>Correcter</h1>
+          <span class="version">v1.0 • Hybrid Engine</span>
+        </div>
+      </div>
+      <div class="status-badge" id="statusBadge">
+        <span class="dot"></span>
+        <span id="statusText">Active</span>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Master Control Section -->
+    <div class="setting-row">
+      <div class="setting-info">
+        <span class="label">Real-time Check</span>
+        <span class="sublabel">Inspect inputs as you type</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="toggle" checked />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Engine Mode Selector -->
+    <div class="engine-section">
+      <div class="setting-info">
+        <span class="label">Checker Engine</span>
+        <span class="sublabel">Choose processing method</span>
+      </div>
+      
+      <!-- Segmented Pill Switch -->
+      <div class="segmented-control">
+        <button class="segment-btn active" data-engine="ai">Gemini</button>
+        <button class="segment-btn" data-engine="google">Google</button>
+        <button class="segment-btn" data-engine="local">Offline</button>
+      </div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="footer">
+      <span id="engineFooterText">Powered by Gemini AI Engine</span>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- API Key Field -->
+    <div class="setting-row">
+      <div class="setting-info">
+        <span class="label">Google API Key</span>
+        <span class="sublabel">Needed for Gemini AI checks. Get one at the Google Cloud Console.</span>
+      </div>
+      <div style="display:flex; flex-direction: column; gap:8px; width:100%">
+        <input id="apiKeyInput" type="password" placeholder="Enter API key" style="width:100%; padding:8px; border-radius:8px; border:1px solid rgba(255,255,255,0.06);" />
+        <div style="display:flex; gap:8px; margin-top:6px;">
+          <button id="saveApiKeyBtn" class="btn-save" style="flex:1;">Save</button>
+          <button id="clearApiKeyBtn" class="btn-clear">Clear</button>
+        </div>
+        <a href="#" id="apiHelpLink" class="api-help">How to get a Google API key</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
